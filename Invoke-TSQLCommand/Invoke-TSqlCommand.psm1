@@ -10,7 +10,7 @@
          )               
     Try{
         #1. Build Connection & Command objects
-        $connStr = "server=$($SQLServerName);database=$($DbName);Integrated Security=SSPI"
+        $connStr = "server=$($ServerName);database=$($DbName);Integrated Security=SSPI"
         $sqlConnection = [System.Data.SqlClient.SqlConnection]::new($connStr)
 
         $sqlCommand = [System.Data.SqlClient.SqlCommand]::new()
